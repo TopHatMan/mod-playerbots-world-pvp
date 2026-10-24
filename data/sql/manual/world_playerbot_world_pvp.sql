@@ -1,5 +1,3 @@
-USE azc_world_ashbringer;
-
 CREATE TABLE IF NOT EXISTS `playerbot_world_pvp_hotspot` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(64) NOT NULL,
