@@ -2,7 +2,7 @@
 #define MOD_PLAYERBOT_WORLD_PVP_LOADER_H
 
 void AddSC_mod_playerbot_world_pvp();
-void Addmod_playerbot_world_pvpScripts();
+void Addmod_playerbots_world_pvpScripts();
 
 inline void AddPlayerbotWorldPvpScripts()
 {

@@ -1484,7 +1484,7 @@ void AddSC_mod_playerbot_world_pvp()
     new PlayerbotWorldPvpCommandScript();
 }
 
-void Addmod_playerbot_world_pvpScripts()
+void Addmod_playerbots_world_pvpScripts()
 {
     AddSC_mod_playerbot_world_pvp();
 }

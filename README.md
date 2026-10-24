@@ -1,4 +1,4 @@
-# mod-playerbot-world-pvp
+# mod-playerbots-world-pvp
 
 Autonomous **world PvP** for [AzerothCore](https://www.azerothcore.org/) +
 [Playerbots](https://github.com/liyunfan1223/mod-playerbots): bots stage
@@ -41,9 +41,17 @@ own — they simply coordinate when more than one is loaded.
 
 ```bash
 cd azerothcore/modules
-git clone https://github.com/<your-user>/mod-playerbot-world-pvp
+git clone https://github.com/<your-user>/mod-playerbots-world-pvp
 # re-run CMake configure, then rebuild
 ```
+
+Keep the default directory name. AzerothCore generates the module's entry point
+from the directory it lives in (`Add<directory>Scripts()`), so a directory named
+anything other than `mod-playerbots-world-pvp` fails to link with
+`undefined reference to 'Addmod_playerbots_world_pvpScripts()'`.
+
+Re-running CMake **configure** is required, not just a rebuild: the loader that
+calls into this module is generated at configure time.
 
 ## Credits
 
